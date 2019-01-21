@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,15 +13,84 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxQ-Wn-uB1" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnZ-tR-huN" userLabel="Red">
+                                        <rect key="frame" x="130" y="244" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0093617555430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="G4Y-wS-sz4"/>
+                                            <constraint firstAttribute="height" constant="100" id="yfo-iO-UdJ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Olf-tX-UL6" userLabel="Green">
+                                        <rect key="frame" x="235" y="324" width="150" height="200"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="60i-PD-DAc"/>
+                                            <constraint firstAttribute="width" constant="150" id="pzB-FI-UOB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dh9-N9-W6J" userLabel="Blue">
+                                        <rect key="frame" x="100" y="599" width="200" height="150"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="I05-Nr-iLQ"/>
+                                            <constraint firstAttribute="width" constant="200" id="yWW-cI-aed"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgq-VQ-96R" userLabel="Yellow">
+                                        <rect key="frame" x="170" y="799" width="180" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.98200260539999995" blue="0.17864087810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="n03-1c-tKl"/>
+                                            <constraint firstAttribute="height" constant="150" id="yfL-2U-07a"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="hnZ-tR-huN" firstAttribute="centerY" secondItem="mxQ-Wn-uB1" secondAttribute="centerY" constant="20" id="4Gd-TG-oxe"/>
+                                    <constraint firstItem="Bgq-VQ-96R" firstAttribute="centerY" secondItem="mxQ-Wn-uB1" secondAttribute="centerY" constant="600" id="AnV-bb-Rlc"/>
+                                    <constraint firstItem="dh9-N9-W6J" firstAttribute="centerX" secondItem="mxQ-Wn-uB1" secondAttribute="centerX" constant="40" id="C4a-Lj-x5h"/>
+                                    <constraint firstItem="dh9-N9-W6J" firstAttribute="centerY" secondItem="mxQ-Wn-uB1" secondAttribute="centerY" constant="400" id="Cpi-EQ-Vb7"/>
+                                    <constraint firstItem="hnZ-tR-huN" firstAttribute="centerX" secondItem="mxQ-Wn-uB1" secondAttribute="centerX" constant="20" id="GFZ-B8-tDh"/>
+                                    <constraint firstItem="Bgq-VQ-96R" firstAttribute="centerX" secondItem="mxQ-Wn-uB1" secondAttribute="centerX" constant="100" id="b5E-uZ-jyn"/>
+                                    <constraint firstItem="Olf-tX-UL6" firstAttribute="centerX" secondItem="mxQ-Wn-uB1" secondAttribute="centerX" constant="150" id="hG6-rL-PaU"/>
+                                    <constraint firstItem="Olf-tX-UL6" firstAttribute="centerY" secondItem="mxQ-Wn-uB1" secondAttribute="centerY" constant="150" id="mtx-bq-hrl"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pMH-wK-b8n" appends="YES" id="diK-lv-PTb"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mxQ-Wn-uB1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5nu-Yf-RKT"/>
+                            <constraint firstItem="mxQ-Wn-uB1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LVi-K0-pox"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mxQ-Wn-uB1" secondAttribute="bottom" id="t0E-Hf-auI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mxQ-Wn-uB1" secondAttribute="trailing" id="wl6-2Z-zio"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="mxQ-Wn-uB1" id="d1P-ua-Dlw"/>
+                        <outlet property="panGestureRecognizer" destination="pMH-wK-b8n" id="hxt-KG-eOi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="pMH-wK-b8n">
+                    <connections>
+                        <action selector="containerViewWasPanned:" destination="BYZ-38-t0r" id="B6F-CE-bP8"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
